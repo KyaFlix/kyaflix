@@ -1,11 +1,10 @@
 {
   "site": {
     "brand": "KyaFlix",
-    "tagline": "Showcasing The Best Porn From Small Creators. New lists every few days",
+    "tagline": "Showcasing The Best Porn From Independent Creators. New lists every few days",
     "lineupLabel": "Todays lineup:",
-    "viewcount": "ViewCount of Last List: 40K",
-    "footerText": "Email to submit your own content! Include the name, a link to it, an up to 300 character summary if wanted, and whether or not you'd like to be sponsored! You'll be randomly selected to be a part of our next list"
-  },
+    "viewcount": " ",
+    "footerText": "Email to submit your own content! Include the name, a link to it, and up to 100 character summary. I'll email you if you're include in the next list!"
 
   "signup": {
     "heading": "GET THE NEXT LIST",
@@ -15,7 +14,7 @@
 
   "support": {
     "heading": "SUPPORT THE SITE",
-    "description": "Keep new lists coming — support helps cover hosting and time spent curating.",
+    "description": "Keep new lists coming! Support helps cover hosting and time spent curating.",
     "link": "ko-fi.com/yoodrix",
     "buttonText": "Support KyaFlix"
   },
@@ -27,83 +26,84 @@
   "cards": [
     {
       "id": "card-1",
-      "title": "DESTINY RINGS",
-      "color": "sponsor",
-      "sponsored": true,
-      "link": "#",
+      "title": "wretchedandwrong",
+      "color": "green",
+      "sponsored": false,
+      "link": "https://www.reddit.com/user/wretchedandwrong/submitted/",
       "image": "",
       "paragraphs": [
         {
-          "lead": "What if your ring quietly buzzed when someone nearby was your match?",
-          "text": " Destiny Rings is a smart ring + companion app that helps people discover mutual attraction in real life. When two compatible people cross paths, both rings subtly buzz. Tap your rings together to confirm the connection, then unlock a match and chat in the app. No swiping. No cold approaches. Just real-life chemistry backed by real compatibility. Launching first in Hoboken."
+          "lead": " ",
+          "text": "A Sinful Sweetheart <3. 30, flirty, and probably horny. 🫦
+
+ "
         },
-        {
-          "text": "Join the early-access waitlist, move up the list by referring friends, and unlock exclusive launch rewards."
-        }
       ]
     },
     {
       "id": "card-2",
-      "title": "GRAIS AI",
+      "title": "
+SurfFly",
       "color": "pink",
       "sponsored": false,
-      "link": "#",
+      "link": "https://www.reddit.com/user/SurfFly/submitted/",
       "image": "",
       "paragraphs": [
         {
-          "text": "Grais AI is your communication partner that lives in real time inside your conversations. Attach a chat, get the context, subtext, promises, and a draft in your voice, then approve what goes out. Works across WhatsApp, Telegram, Instagram, LinkedIn, and Tinder. Register and test it free now."
+          "text": "Summoning all the love and light out of the back half of our lives. Allowing myself to flourish while loving myself and him in more authentic and adventurous ways because someday it all ends."
         }
       ]
     },
     {
       "id": "card-3",
-      "title": "ALLTAILS CARE",
+      "title": "DarlingBoo",
       "color": "teal",
       "sponsored": false,
-      "link": "#",
+      "link": "https://www.reddit.com/user/DarlingBoo/submitted/",
       "image": "",
       "paragraphs": [
         {
-          "text": "AllTails Care is a mobile app that centralizes pet care. Routines, health logs and analytics, family and caregiver sharing. All info in one place — no missed meds, no forgetting info at the vet. Free for one person, one pet."
+          "text": "I’m your girl-next-door...but also your freaky neighbour. Just here to express myself 🙈"
         }
       ]
     },
     {
       "id": "card-4",
-      "title": "MINUTED",
+      "title": "PantyNectar",
       "color": "cream",
       "sponsored": false,
-      "link": "#",
+      "link": "https://www.reddit.com/user/PantyNectar/submitted/",
       "image": "",
       "paragraphs": [
         {
-          "text": "Build a roster of people you meet with regularly (with their hourly rates), and when a meeting starts, pick who's in the room and tap Start. The app shows the running dollar cost of the meeting live, in real time."
+          "text": "Being pregnant never stopped anyone from being sexy"
         }
       ]
     },
     {
       "id": "card-5",
-      "title": "HEURON",
+      "title": "ABearNhisladybug",
       "color": "sponsor",
       "sponsored": false,
-      "link": "#",
+      "link": "https://www.reddit.com/user/ABearNhisladybug/",
       "image": "",
       "paragraphs": [
         {
-          "text": "A social and visual news hub. It's a navigable map that features markers that represent articles from around the world."
+          "text": "Happily married, kink-positive, and a little wicked. Seeking couples, women, trans women & fem/vers men to play, explore, and spark real chemistry.
+"
         }
       ]
     },
     {
       "id": "card-6",
-      "title": "HABIT OF THE DAY",
+      "title": "Rattoos",
       "color": "pink",
       "sponsored": false,
-      "link": "#",
+      "link": "https://www.reddit.com/user/Rattoos/",
       "image": "",
       "paragraphs": [
         {
-          "text": "Gives you one small habit a day from the community or curated feed and all you need to do is complete it. No streaks, no guilt — and if you fail you're given a smaller habit instead, so you're still improving."
+          "text": "22F Just doing it for the plot (Alt account is u/Rattwos). Warning: I read all DMs, but you need to be interesting and unique to get a reply!"
         }
       ]
     }
