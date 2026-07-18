@@ -37,9 +37,18 @@
 
   .brand{
     text-align:center;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     letter-spacing: 2px;
+    margin: 0 0 6px;
+    color: var(--page-text);
+  }
+
+  .byline{
+    text-align:center;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    opacity: 0.65;
     margin: 0 0 28px;
     color: var(--page-text);
   }
@@ -240,7 +249,7 @@
   }
 
   @media (max-width: 480px){
-    .brand{ font-size: 1.6rem; }
+    .brand{ font-size: 2.2rem; }
     .card{ padding: 26px 18px; }
   }
 </style>
@@ -321,6 +330,7 @@
 
     page.innerHTML = `
       <div class="brand">${escapeHtml(data.site.brand)}</div>
+      <p class="byline">by yoodrix</p>
       <p class="tagline">${escapeHtml(data.site.tagline)}</p>
       <p class="lineup-label">${escapeHtml(data.site.lineupLabel)}</p>
 
