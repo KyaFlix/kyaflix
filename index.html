@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yoodrix — Showcasing sites from small devs</title>
+<title>KyaFlix — Showcasing the best from small creators</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -101,7 +101,17 @@
 
   .card .lead{ font-weight: 700; color: inherit; }
 
-  /* Icon buttons keep their original light styling (unaffected by dark theme request) */
+  .card-image{
+    display:block;
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    border: 2px solid currentColor;
+    margin: 0 0 20px;
+    object-fit: cover;
+  }
+
+  /* Icon buttons keep their original light styling */
   .icon-btn{
     display:flex;
     align-items:center;
@@ -141,12 +151,9 @@
     text-align:center;
     color: var(--page-text);
     margin: 0;
-    max-width: 110px;
+    max-width: 160px;
     line-height: 1.4;
   }
-
-  .social-row .icon-btn{ width: 64px; height: 64px; border-radius: 18px; }
-  .social-row .icon-btn svg{ width: 30px; height: 30px; }
 
   .viewcount{
     text-align:center;
@@ -167,83 +174,70 @@
 
   .footer-text a{ color: var(--page-text); }
 
-  /* Signup / newsletter card — kept the same as the original light design */
-  .signup-card{
+  /* Signup + Support cards — same prominent treatment, light background */
+  .signup-card, .support-card{
     border-radius: 22px;
     border: 3px solid var(--ink);
     box-shadow: 8px 8px 0 var(--card-shadow);
     padding: 32px 26px;
-    margin-bottom: 44px;
+    margin-bottom: 32px;
     background: var(--card-cream);
     text-align: center;
     color: var(--ink);
   }
 
-  .signup-card h2{
+  .signup-card h2, .support-card h2{
     font-size: 1.4rem;
     margin: 0 0 10px;
     letter-spacing: 1px;
     color: var(--ink);
   }
 
-  .signup-card p{
+  .signup-card p, .support-card p{
     font-size: 0.95rem;
     line-height: 1.6;
     margin: 0 0 20px;
     color: var(--ink);
   }
 
-  .signup-form{
-    display:flex;
-    gap: 10px;
-    max-width: 380px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    justify-content:center;
-  }
+  .support-card{ background: var(--card-pink); }
 
-  .signup-form input[type="email"]{
-    flex: 1 1 200px;
+  .cta-btn{
+    display:inline-block;
     font-family: inherit;
-    font-size: 0.95rem;
-    padding: 12px 14px;
-    border: 3px solid var(--ink);
-    border-radius: 12px;
-    background: var(--icon-bg);
-    color: var(--ink);
-    outline: none;
-  }
-
-  .signup-form input[type="email"]:focus{
-    box-shadow: 0 0 0 3px rgba(44,38,34,0.2);
-  }
-
-  .signup-form button{
-    font-family: inherit;
-    font-size: 0.95rem;
+    font-size: 0.98rem;
     font-weight: 700;
-    padding: 12px 20px;
+    padding: 14px 28px;
     border: 3px solid var(--ink);
     border-radius: 12px;
-    background: var(--card-pink);
+    background: var(--card-cream);
     color: var(--ink);
     box-shadow: 5px 5px 0 var(--card-shadow);
     cursor: pointer;
+    text-decoration: none;
     transition: transform 0.15s ease;
   }
 
-  .signup-form button:hover{ transform: translate(-2px,-2px); }
-  .signup-form button:active{ transform: translate(1px,1px); box-shadow: 3px 3px 0 var(--card-shadow); }
+  .cta-btn:hover{ transform: translate(-2px,-2px); }
+  .cta-btn:active{ transform: translate(1px,1px); box-shadow: 3px 3px 0 var(--card-shadow); }
 
-  .signup-msg{
-    margin-top: 14px;
-    font-size: 0.9rem;
-    min-height: 1.2em;
+  .signup-embed-wrap{
+    max-width: 380px;
+    margin: 0 auto;
   }
 
-  .signup-msg.success{ color: #1a7a4c; font-weight: 700; }
-  .signup-msg.error{ color: #a33; font-weight: 700; }
-  .signup-msg.demo{ color: #6b5c00; }
+  .signup-embed-wrap iframe{
+    width: 100%;
+    border: 1px solid var(--ink);
+    border-radius: 10px;
+    background: white;
+  }
+
+  .signup-demo-note{
+    font-size: 0.85rem;
+    color: #6b5c00;
+    margin: 0;
+  }
 
   @media (max-width: 480px){
     .brand{ font-size: 1.6rem; }
@@ -260,8 +254,6 @@
 <script>
   const ARROW_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>';
 
-  const COFFEE_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>';
-
   const EMAIL_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>';
 
   function escapeHtml(str){
@@ -277,15 +269,49 @@
     }).join('');
 
     const sponsoredTag = card.sponsored ? '<p class="sponsored-tag">Sponsored</p>' : '';
+    const imageHtml = card.image ? `<img class="card-image" src="${card.image}" alt="${escapeHtml(card.title)}">` : '';
 
     return `
       <div class="card ${card.color || ''}" id="${card.id}">
         <h2>${escapeHtml(card.title)}</h2>
         ${sponsoredTag}
+        ${imageHtml}
         ${paragraphsHtml}
         <a class="icon-btn" href="${card.link}" target="_blank" rel="noopener" aria-label="Visit ${escapeHtml(card.title)}">
           ${ARROW_SVG}
         </a>
+      </div>`;
+  }
+
+  function renderSignup(signup){
+    const isPlaceholder = !signup.substackName || signup.substackName === "YOUR_SUBSTACK_NAME";
+
+    if(isPlaceholder){
+      return `
+        <div class="signup-card" id="signup-card">
+          <h2>${escapeHtml(signup.heading)}</h2>
+          <p>${escapeHtml(signup.description)}</p>
+          <p class="signup-demo-note">(Demo) Set "substackName" in data.json to your Substack publication name to load the live signup form here.</p>
+        </div>`;
+    }
+
+    const embedSrc = `https://${signup.substackName}.substack.com/embed`;
+    return `
+      <div class="signup-card" id="signup-card">
+        <h2>${escapeHtml(signup.heading)}</h2>
+        <p>${escapeHtml(signup.description)}</p>
+        <div class="signup-embed-wrap">
+          <iframe src="${embedSrc}" width="100%" height="150" style="background:white;" frameborder="0" scrolling="no"></iframe>
+        </div>
+      </div>`;
+  }
+
+  function renderSupport(support){
+    return `
+      <div class="support-card" id="support-card">
+        <h2>${escapeHtml(support.heading)}</h2>
+        <p>${escapeHtml(support.description)}</p>
+        <a class="cta-btn" href="${support.link}" target="_blank" rel="noopener">${escapeHtml(support.buttonText || 'Support')}</a>
       </div>`;
   }
 
@@ -300,24 +326,14 @@
 
       ${cardsHtml}
 
-      <div class="signup-card" id="signup-card">
-        <h2>${escapeHtml(data.signup.heading)}</h2>
-        <p>${escapeHtml(data.signup.description)}</p>
-        <form class="signup-form" id="signup-form">
-          <input type="email" id="signup-email" name="email" placeholder="your@email.com" required>
-          <button type="submit">Subscribe</button>
-        </form>
-        <p class="signup-msg" id="signup-msg"></p>
-      </div>
+      ${renderSupport(data.support)}
+
+      ${renderSignup(data.signup)}
 
       <div class="social-row">
         <div class="social-item">
-          <a class="icon-btn" href="${data.social.coffee}" target="_blank" rel="noopener" aria-label="Buy Me A Coffee">${COFFEE_SVG}</a>
-          <p class="social-caption">Buy me a coffee — every bit helps keep the lights on</p>
-        </div>
-        <div class="social-item">
           <a class="icon-btn" href="${data.social.email}" aria-label="Email">${EMAIL_SVG}</a>
-          <p class="social-caption">Email to submit your own project</p>
+          <p class="social-caption">Email to submit your own content</p>
         </div>
       </div>
 
@@ -325,54 +341,6 @@
 
       <p class="footer-text">${escapeHtml(data.site.footerText)}</p>
     `;
-
-    setupSignupForm(data.signup.buttondownUsername);
-  }
-
-  function setupSignupForm(buttondownUsername){
-    const form = document.getElementById('signup-form');
-    const emailInput = document.getElementById('signup-email');
-    const msg = document.getElementById('signup-msg');
-
-    function showMsg(text, type){
-      msg.textContent = text;
-      msg.className = 'signup-msg ' + type;
-    }
-
-    form.addEventListener('submit', async function(e){
-      e.preventDefault();
-      const email = emailInput.value.trim();
-      if(!email){ return; }
-
-      // DEMO MODE: no real Buttondown username set yet, so we simulate success
-      // locally. This lets you test the form/UI before wiring up the real account.
-      if(!buttondownUsername || buttondownUsername === "YOUR_USERNAME"){
-        showMsg("✓ (Demo) Would have subscribed: " + email + " — set buttondownUsername in data.json to go live.", "demo");
-        form.reset();
-        return;
-      }
-
-      // LIVE MODE: real submission to Buttondown once username is set
-      try{
-        showMsg("Submitting…", "demo");
-        const resp = await fetch(
-          "https://buttondown.com/api/emails/embed-subscribe/" + buttondownUsername,
-          {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: "email=" + encodeURIComponent(email) + "&embed=1"
-          }
-        );
-        if(resp.ok){
-          showMsg("✓ You're subscribed! Check your inbox to confirm.", "success");
-          form.reset();
-        } else {
-          showMsg("Something went wrong — try again in a minute.", "error");
-        }
-      } catch(err){
-        showMsg("Couldn't reach the signup service. Try again shortly.", "error");
-      }
-    });
   }
 
   // ---- LOAD DATA ----
@@ -391,7 +359,7 @@
 </script>
 
 <!-- GoatCounter analytics -->
-<script data-goatcounter="https://yoodrix.goatcounter.com/count"
+<script data-goatcounter="https://YOUR_CODE.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 
 </body>
