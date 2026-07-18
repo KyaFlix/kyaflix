@@ -5,39 +5,34 @@
     "lineupLabel": "Todays lineup:",
     "viewcount": " ",
     "footerText": "Email to submit your own content! Include the name, a link to it, and up to 100 character summary. I'll email you if you're include in the next list!"
-
+  },
   "signup": {
     "heading": "GET THE NEXT LIST",
     "description": "Drop your email to get notified when a new lineup goes out. No spam, just shout outs.",
     "substackName": "kyaflix"
   },
-
   "support": {
     "heading": "SUPPORT THE SITE",
     "description": "Keep new lists coming! Support helps cover hosting and time spent curating.",
-    "link": "ko-fi.com/yoodrix",
+    "link": "https://ko-fi.com/kyaflix",
     "buttonText": "Support KyaFlix"
   },
-
   "social": {
     "email": "mailto:codercrappy@gmail.com"
   },
-
   "cards": [
     {
       "id": "card-1",
       "title": "wretchedandwrong",
-      "color": "green",
+      "color": "sponsor",
       "sponsored": false,
       "link": "https://www.reddit.com/user/wretchedandwrong/submitted/",
       "image": "",
       "paragraphs": [
         {
           "lead": " ",
-          "text": "A Sinful Sweetheart <3. 30, flirty, and probably horny. 🫦
-
- "
-        },
+          "text": "A Sinful Sweetheart <3. 30, flirty, and probably horny. 🫦"
+        }
       ]
     },
     {
@@ -62,7 +57,7 @@
       "image": "",
       "paragraphs": [
         {
-          "text": "I’m your girl-next-door...but also your freaky neighbour. Just here to express myself 🙈"
+          "text": "I'm your girl-next-door...but also your freaky neighbour. Just here to express myself 🙈"
         }
       ]
     },
@@ -88,8 +83,7 @@
       "image": "",
       "paragraphs": [
         {
-          "text": "Happily married, kink-positive, and a little wicked. Seeking couples, women, trans women & fem/vers men to play, explore, and spark real chemistry.
-"
+          "text": "Happily married, kink-positive, and a little wicked. Seeking couples, women, trans women & fem/vers men to play, explore, and spark real chemistry."
         }
       ]
     },
