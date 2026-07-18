@@ -10,13 +10,18 @@
   "signup": {
     "heading": "GET THE NEXT LIST",
     "description": "Drop your email to get notified when a new lineup goes out. No spam, just shout outs.",
-    "buttondownUsername": "YOUR_USERNAME"
+    "substackName": "YOUR_SUBSTACK_NAME"
+  },
+
+  "support": {
+    "heading": "SUPPORT THE SITE",
+    "description": "Keep new lists coming — support helps cover hosting and time spent curating.",
+    "link": "https://www.subscribestar.com/kyaflix",
+    "buttonText": "Support KyaFlix"
   },
 
   "social": {
-    "coffee": "https://www.subscribestar.com/kyaflix",
-    "email": "mailto:codercrappy@gmail.com",
-    "instagram": "https://instagram.com/"
+    "email": "mailto:codercrappy@gmail.com"
   },
 
   "cards": [
@@ -26,6 +31,7 @@
       "color": "sponsor",
       "sponsored": true,
       "link": "#",
+      "image": "",
       "paragraphs": [
         {
           "lead": "What if your ring quietly buzzed when someone nearby was your match?",
@@ -42,6 +48,7 @@
       "color": "pink",
       "sponsored": false,
       "link": "#",
+      "image": "",
       "paragraphs": [
         {
           "text": "Grais AI is your communication partner that lives in real time inside your conversations. Attach a chat, get the context, subtext, promises, and a draft in your voice, then approve what goes out. Works across WhatsApp, Telegram, Instagram, LinkedIn, and Tinder. Register and test it free now."
@@ -54,6 +61,7 @@
       "color": "teal",
       "sponsored": false,
       "link": "#",
+      "image": "",
       "paragraphs": [
         {
           "text": "AllTails Care is a mobile app that centralizes pet care. Routines, health logs and analytics, family and caregiver sharing. All info in one place — no missed meds, no forgetting info at the vet. Free for one person, one pet."
@@ -66,6 +74,7 @@
       "color": "cream",
       "sponsored": false,
       "link": "#",
+      "image": "",
       "paragraphs": [
         {
           "text": "Build a roster of people you meet with regularly (with their hourly rates), and when a meeting starts, pick who's in the room and tap Start. The app shows the running dollar cost of the meeting live, in real time."
@@ -78,6 +87,7 @@
       "color": "sponsor",
       "sponsored": false,
       "link": "#",
+      "image": "",
       "paragraphs": [
         {
           "text": "A social and visual news hub. It's a navigable map that features markers that represent articles from around the world."
@@ -90,6 +100,7 @@
       "color": "pink",
       "sponsored": false,
       "link": "#",
+      "image": "",
       "paragraphs": [
         {
           "text": "Gives you one small habit a day from the community or curated feed and all you need to do is complete it. No streaks, no guilt — and if you fail you're given a smaller habit instead, so you're still improving."
